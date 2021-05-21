@@ -3,9 +3,6 @@ import { User, Album, Post } from '../features/login/user.interface';
 import { RootState } from './store';
 import { fetchUser } from './userApi';
 import { isEmpty } from 'lodash';
-import mockPosts from '../spec/posts.json';
-import mockAlbums from '../spec/albums.json';
-import mockUser from '../spec/user.json';
 
 export enum LoginState {
   SUCCESS = 'success',
@@ -42,6 +39,7 @@ const initialState: userState = {
   content_state: UserContentState.POSTS
 };
 
+// async action that fetchs the user data
 export const fetchUserInfo = createAsyncThunk(
   'user/fetchUser',
   async (login_email: string) => {
@@ -80,8 +78,10 @@ export const userSlice = createSlice({
   },
 });
 
+// actions
 export const { updateLoginStatus, logOutUser, updateUserContentState } = userSlice.actions;
 
+// selectors
 export const userIsLoggedIn = (state: RootState) => !isEmpty(state.user.user);
 export const getUser = (state: RootState) => state.user.user;
 export const getUserPosts = (state: RootState) => state.user.posts;

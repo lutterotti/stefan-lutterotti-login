@@ -15,11 +15,7 @@ function displayCurrentPage(user_is_logged_in: boolean) {
 
 const App: React.FC<{}> = () => {
   const user_is_logged_in: boolean = useAppSelector(userIsLoggedIn);
-  return (
-    <div className="platform">
-      {displayCurrentPage(user_is_logged_in)}
-    </div>
-  )
+  return (<div className="platform">{displayCurrentPage(user_is_logged_in)}</div>)
 }
 
 export default App;

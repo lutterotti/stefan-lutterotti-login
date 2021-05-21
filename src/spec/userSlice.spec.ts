@@ -1,6 +1,5 @@
 import { User } from '../features/login/user.interface';
-import userReducer, { getUserPosts, LoginState, UserContentState, userState, userSlice, logOutUser, updateLoginStatus, updateUserContentState } from '../store/userSlice';
-import mockUser from './user.json';
+import userReducer, { LoginState, UserContentState, logOutUser, updateLoginStatus, updateUserContentState } from '../store/userSlice';
 import mockPosts from './posts.json';
 import mockAlbums from './albums.json';
 
@@ -13,6 +12,7 @@ describe('user reducer', () => {
     login_status: LoginState.PENDING,
     content_state: UserContentState.POSTS
   };
+
   it('should handle initial state', () => {
     expect(userReducer(undefined, { type: 'unknown' })).toEqual(initialState);
   });
