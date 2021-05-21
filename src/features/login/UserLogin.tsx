@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Spinner } from 'react-bootstrap';
 import { useAppDispatch, useAppSelector } from '../../store/hooks';
-import { fetchUserInfo, getLoginStatus, getUser, isLoading, LoginState, updateLoginStatus } from '../../store/userSlice';
+import { fetchUserInfo, getLoginStatus, isLoading, LoginState, updateLoginStatus } from '../../store/userSlice';
 import '../styles/MainStyles.scss';
 
 function loginAttemptFailed() {

@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from './logo.svg';
 import './features/styles/MainStyles.scss';
 import UserLogin from './features/login/UserLogin';
 import { useAppSelector } from './store/hooks';
