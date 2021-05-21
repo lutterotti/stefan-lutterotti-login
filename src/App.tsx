@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from './logo.svg';
 import './features/styles/MainStyles.scss';
 import UserLogin from './features/login/UserLogin';
 import { useAppSelector } from './store/hooks';
@@ -16,11 +15,7 @@ function displayCurrentPage(user_is_logged_in: boolean) {
 
 const App: React.FC<{}> = () => {
   const user_is_logged_in: boolean = useAppSelector(userIsLoggedIn);
-  return (
-    <div className="platform">
-      {displayCurrentPage(user_is_logged_in)}
-    </div>
-  )
+  return (<div className="platform">{displayCurrentPage(user_is_logged_in)}</div>)
 }
 
 export default App;
