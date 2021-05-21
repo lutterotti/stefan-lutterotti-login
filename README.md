@@ -1,5 +1,6 @@
-### Coding Challenge 
+## Coding Challenge 
 
+**Link to Figma Design:** https://www.figma.com/file/qK6BNhT4cLccpn9x3LLMVw/Nesto-Draft?node-id=0%3A1
 
 *Here are a couple notes for this project:*
 
@@ -13,3 +14,4 @@
   - to get in use `Sincere@april.biz`, `Shanna@melissa.tv` or `Nathan@yesenia.net`
 
 4. I decided to add some photos to the albums and user to make it more visually appealing
+
