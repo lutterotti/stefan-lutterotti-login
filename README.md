@@ -1,7 +1,7 @@
 ### Coding Challenge 
 
 
-**Here are a couple notes for this project: **
+*Here are a couple notes for this project:*
 
 1. The bread and butter of this project is in how I'm fetching the user's data
   -   Instead of fetching directly inside of the component, Im using an async action to transform the promises into observables
