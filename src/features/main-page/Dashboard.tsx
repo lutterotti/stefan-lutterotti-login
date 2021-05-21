@@ -13,12 +13,12 @@ const Dashboard: React.FC<{}> = () => {
     <div className="dashboard">
       <h6 className="dashboard-title">Dashboard</h6>
       <div className={selected_state === UserContentState.POSTS ? 'dashboard-step selected-step' : 'dashboard-step'} onClick={() => dispatch(updateUserContentState(UserContentState.POSTS))}>
-        <BiDetail className="icon"/>
-        <p>Posts</p>
+        <BiDetail color="#212241" size="20"/>
+        <p className="title-text">Posts</p>
       </div>
       <div className={selected_state === UserContentState.ALBUMS ? 'dashboard-step selected-step' : 'dashboard-step'} onClick={() => dispatch(updateUserContentState(UserContentState.ALBUMS))}>
-        <BiPhotoAlbum className="icon"/>
-        <p>Albums</p>
+        <BiPhotoAlbum color="#212241" size="20"/>
+        <p className="title-text">Albums</p>
       </div>
     </div>
   )
