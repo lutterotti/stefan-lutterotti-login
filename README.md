@@ -1,7 +1,5 @@
 ## Notes 
 
-**Link to Figma Design:** https://www.figma.com/file/qK6BNhT4cLccpn9x3LLMVw/Nesto-Draft?node-id=0%3A1
-
 *Here are a couple notes for this project:*
 
 1. The bread and butter of this project is in how I'm fetching the user's data
