@@ -1,4 +1,4 @@
-## Coding Challenge 
+## Notes 
 
 **Link to Figma Design:** https://www.figma.com/file/qK6BNhT4cLccpn9x3LLMVw/Nesto-Draft?node-id=0%3A1
 
